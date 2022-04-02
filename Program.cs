@@ -40,6 +40,33 @@ namespace MyNamespace
             MySemaphore = Semaphore.Red;
             Console.WriteLine(MySemaphore);
 
+            Console.WriteLine("\n***************************************************\n");
+
+            Console.WriteLine("3.5. Ввод и вывод в консоль");
+
+            string MyName1 = "Евгения";
+            Console.WriteLine("Привет, мир");
+            Console.WriteLine();
+            Console.WriteLine($"Меня зовут {MyName1}");
+
+            // Вставка строгового литерала
+            Console.WriteLine("Меня зовут {0}", "Mini");
+
+            Console.WriteLine("\n***************************************************\n");
+
+            string NameComputer = "Computer";
+            Console.WriteLine("Привет, человек");
+            Console.WriteLine("Меня зовут {0}", NameComputer);
+            Console.WriteLine("А как тебя зовут?");
+            string YourName = Console.ReadLine();
+            Console.WriteLine("Рад встрече, {0}", YourName);
+
+            
+
+            Console.WriteLine();
+
+
+
             Console.ReadKey();
 
         }
