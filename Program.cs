@@ -31,7 +31,7 @@ namespace MyNamespace
             Console.WriteLine("Перечесления\n");
 
             DaysOfWeek MyFavoriteDay;
-            MyFavoriteDay = DaysOfWeek.Friday;
+            MyFavoriteDay = DaysOfWeek.Monday;
             Console.WriteLine(MyFavoriteDay);
 
             Console.WriteLine("\n***************************************************\n");
@@ -80,6 +80,75 @@ namespace MyNamespace
             Console.WriteLine("Демонстарция приоритета операций");
             double result2 = 10.0 * 2.0 / 5.0;
             Console.WriteLine("10.0 * 2.0 / 5.0  Value: {0}", result2);
+
+            Console.WriteLine("\n***************************************************\n");
+
+            Console.WriteLine("3.7. Преобразования типов\n");
+
+            int olddata = 6;
+            string data = olddata.ToString();
+            Console.WriteLine(olddata);
+            Console.WriteLine(data);
+
+            Console.WriteLine();
+
+            //Console.Write("Enter your age: ");
+            //int age = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Your age is {0}\n", age);
+
+            Console.WriteLine("Проверка на корректность ввода.Пользователь ввёл не чило а число с текстом - (27 лет)\n");
+
+            //Console.WriteLine("Enter your age: ");
+            //int age1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Your age is {0}", age1);
+
+            Console.WriteLine();
+
+            Console.WriteLine("TryParse возвращает булевское значение в зависимости от того, было\n" +
+                "ли преобразование удачным. После этого его можно обработать. В любом случае, если в строке\n" +
+                "будет что-то неверно (не только цифры, но и буквы), преобразование не получится,\n" +
+                "но программа не выпадет в ошибку\n");
+
+            //Console.WriteLine("Enter your age: ");
+            //int age2;
+            //bool iscorrect = int.TryParse(Console.ReadLine(), out age2);
+            //Console.WriteLine("Your age is {0}\n", age2);
+
+            //Console.WriteLine("Краткая справка обо мне\n");
+            //Console.WriteLine("Enter your name: ");
+            //string name2 = Console.ReadLine();
+            //Console.Write("Enter your age: ");
+            //int age2 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Your name is {0} and age is {1}\n", name2, age2);
+
+            Console.WriteLine("Сейчас возраст мы вводим в переменную типа int.\n" +
+                "Это слишком много, почему бы не привести её к byte?\n");
+
+            //Console.WriteLine("Enter your name: ");
+            //string name3 = Console.ReadLine();
+            //Console.WriteLine("Enter your age: ");
+            //byte age3 = (byte)int.Parse(Console.ReadLine());
+            //Console.WriteLine("Your name is {0} and your age is {1}\n", name3, age3);
+
+            Console.WriteLine("checked - служебное слово. Проверяет возможно ли преобразование без потери данных\n");
+
+            Console.WriteLine("Enter your name: ");
+            string name4 = Console.ReadLine();
+            Console.WriteLine("Enter your age: ");
+            byte age4 = checked((byte)int.Parse(Console.ReadLine()));
+            Console.WriteLine("Your name is {0} and your age is {1}\n", name4, age4);
+
+            Console.WriteLine("Задание 3.7.4\n");
+
+            Console.Write("Enter your name: ");
+            string name5 = Console.ReadLine();
+            Console.Write("Enter your age: ");
+            byte age5 = checked((byte)int.Parse(Console.ReadLine()));
+            Console.WriteLine("Your name is {0} and age is {1}", name5, age5);
+            Console.Write("What is your favorite day of week? ");
+            DayOfWeek day = (DayOfWeek)int.Parse(Console.ReadLine());
+            Console.WriteLine("Your favorite day is {0}\n", day);
+
 
             Console.ReadKey();
 
