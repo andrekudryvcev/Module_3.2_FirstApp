@@ -58,14 +58,28 @@ namespace MyNamespace
             Console.WriteLine("Привет, человек");
             Console.WriteLine("Меня зовут {0}", NameComputer);
             Console.WriteLine("А как тебя зовут?");
-            string YourName = Console.ReadLine();
-            Console.WriteLine("Рад встрече, {0}", YourName);
+            //string YourName = Console.ReadLine();
+            //Console.WriteLine("Рад встрече, {0}", YourName);
 
-            
+            Console.WriteLine("\n***************************************************\n");
 
-            Console.WriteLine();
+            Console.WriteLine("3.6. Основные операции C#");
 
+            double result = 5.0 / 2.0;
+            Console.WriteLine("5 / 2 = {0}", result);
+            Console.WriteLine("\n");
 
+            Console.WriteLine("Операция вычисления остатка от деления");
+            double result1 = 5.0 % 2.0;
+            Console.WriteLine("Остаток от деления 5 / 2 равен {0}\n", result1);
+
+            Console.WriteLine("Операции инкемент ++ и декремент --");
+            int counter = 10;
+            Console.WriteLine("Value: {0} increment: {1}\n", counter, ++counter);
+
+            Console.WriteLine("Демонстарция приоритета операций");
+            double result2 = 10.0 * 2.0 / 5.0;
+            Console.WriteLine("10.0 * 2.0 / 5.0  Value: {0}", result2);
 
             Console.ReadKey();
 
